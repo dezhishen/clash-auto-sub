@@ -1,13 +1,14 @@
 package main
 
 import (
+	"bytes"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"strconv"
-	"strings"
 	"time"
 
 	"github.com/spf13/viper"
@@ -69,8 +70,16 @@ func mergeConfig() error {
 }
 
 func realoadClashConfig() error {
+	type configPut struct {
+		Path string `json:"path"`
+	}
 	path := getClashConfigPathInClash()
-	req, err := http.NewRequest("PUT", getClashUrl()+"/configs", strings.NewReader(path))
+	body := &configPut{
+		Path: path,
+	}
+	bodyBytes, _ := json.Marshal(body)
+	req, err := http.NewRequest("PUT", getClashUrl()+"/configs", bytes.NewBuffer(bodyBytes))
+	req.Header.Set("Content-Type", "application/json")
 	secrect := getClashSecret()
 	if secrect != "" {
 		req.Header.Set("authorization", fmt.Sprintf("Bearer %s", secrect))
