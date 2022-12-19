@@ -73,7 +73,7 @@ func realoadClashConfig() error {
 	req, err := http.NewRequest("PUT", getClashUrl()+"/configs", strings.NewReader(path))
 	secrect := getClashSecret()
 	if secrect != "" {
-		req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", secrect))
+		req.Header.Set("authorization", fmt.Sprintf("Bearer %s", secrect))
 	}
 	if err != nil {
 		return errors.New("create request has error: " + err.Error())
