@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -109,7 +110,20 @@ func getClashSecret() string {
 	return secret
 }
 func getInterval() int {
-	return 3600
+	interval := os.Getenv("INTERVAL")
+	if interval == "" {
+		interval = "3600"
+	}
+	result, err := strconv.Atoi(interval)
+	if err != nil {
+		log.Println("get interval has error: ", err, ", use default value 3600")
+		result = 3600
+	}
+	if result <= 0 {
+		log.Println("get interval is less than 0, use default value 3600")
+		result = 3600
+	}
+	return result
 }
 
 func getPath() string {
