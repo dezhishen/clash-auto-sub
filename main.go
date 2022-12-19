@@ -54,7 +54,10 @@ func mergeConfig() error {
 	}
 	local := viper.New()
 	local.SetConfigFile(getPath())
-	local.ReadInConfig()
+	err = local.ReadInConfig()
+	if err != nil {
+		return fmt.Errorf("read config has error: %v", err)
+	}
 	local.Set("proxies", proxies)
 	err = local.WriteConfig()
 	if err != nil {
