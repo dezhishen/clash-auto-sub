@@ -54,6 +54,8 @@ func mergeConfig() error {
 	if proxies == nil {
 		return fmt.Errorf("get proxies from url [%s] is empty", url)
 	}
+	proxyGroups := remote.Get("proxy-groups")
+	rules := remote.Get("rules")
 	local := viper.New()
 	local.SetConfigFile(getPath())
 	err = local.ReadInConfig()
@@ -61,6 +63,12 @@ func mergeConfig() error {
 		return fmt.Errorf("read config has error: %v", err)
 	}
 	local.Set("proxies", proxies)
+	if proxyGroups != nil {
+		local.Set("proxy-groups", proxyGroups)
+	}
+	if rules != nil {
+		local.Set("rules", rules)
+	}
 	err = local.WriteConfig()
 	if err != nil {
 		return fmt.Errorf("write config has error: %v", err)
