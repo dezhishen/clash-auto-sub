@@ -1,0 +1,249 @@
+allow-lan: false
+external-controller: 0.0.0.0:9090
+log-level: silent
+mode: rule
+port: 7890
+proxies:
+    - name: T-AA-美国三网极速节点
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22006
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AA-莫斯科CN2(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22039
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AS4837-Alpha(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22004
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AS4837-CeraBeta(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22001
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AS4837-SanJose(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22002
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-As4837-SPCera(联通CUVIP)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22015
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-As4837-SPCera²(联通CUVIP)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22016
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AS4837-中国优化(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22003
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-AS9929-Layer1.2倍率(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22008
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-CDRⁿ(三网)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22021
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-Cogen-圣何塞(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22019
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-Cogent-Miamiⁿ(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22010
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-Dedipath-SJ(三网精品网络)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22035
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GCORE伯力(联通CUVIP)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22011
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GCORE伯力²(联通CUVIP)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22012
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GIA-HK1(三网极速)2倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22023
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GIA-HK2(三网极速)2倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22024
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GIA-HK3(三网极速)2倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22025
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-GIA-HK4(三网极速)2倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22026
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-Hostdare-CN2LA
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22027
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-HTD-WAⁿ(三网j极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22020
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-IIJ-东京²ⁿ(三网流媒体)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22029
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-IIJ-东京ⁿ(三网流媒体)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22028
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-IIJ-大阪ⁿ(三网流媒体)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22031
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-IIJ-香港ⁿ(三网流媒体)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22030
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-ION-LA(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22017
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-ION-LA²(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22009
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-ION-SJ(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22007
+      server: cm.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-ION-SJ²(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22018
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-V-SJ(电信/联通)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22033
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-vDDP-SJ(三网)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22034
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-vol香港原生ⁿ2倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22022
+      server: cm.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-VTN-香港(三网极速)1.5倍率
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22038
+      server: cm.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-Vultr-日本(三网)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22040
+      server: cm.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-东京(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22037
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-南美智利(特殊用途)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22032
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-土耳其
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22014
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-流媒体SG
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22036
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: T-英国UKⁿ²(三网极速)
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22013
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+    - name: 续费v.tuanzi.vip 关vpn访问
+      password: 9ab274cf-2718-3160-a045-649ae421a9e2
+      port: 22006
+      server: cu.tuanzi.vip
+      sni: download.tuanzi.vip
+      type: trojan
+redir-port: 7892
+secret: adaywugdhjawdaw
+socks-port: 7891
