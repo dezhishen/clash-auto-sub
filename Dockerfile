@@ -1,4 +1,4 @@
-FROM golang:1.19.0-alpine3.13 AS builder
+FROM golang:1.19.0 AS builder
 RUN go env -w GO111MODULE=auto \
   && go env -w GOPROXY=https://goproxy.cn,direct 
 WORKDIR /build
